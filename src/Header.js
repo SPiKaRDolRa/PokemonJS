@@ -1,50 +1,29 @@
 import React from 'react'
+import {Nav} from 'react-bootstrap'
 
 const Header = () => {
     return (
-        <>
-            <Navbar bg="light">
-                <Container>
-                <Navbar.Brand href="#home">Brand link</Navbar.Brand>
-                </Container>
-            </Navbar>
-            <br />
-            <Navbar bg="light">
-                <Container>
-                <Navbar.Brand>Brand text</Navbar.Brand>
-                </Container>
-            </Navbar>
-            <br />
-            <Navbar bg="dark">
-            <Container>
-                <Navbar.Brand href="#home">
-                <img
-                    src="/logo.svg"
-                    width="30"
-                    height="30"
-                    className="d-inline-block align-top"
-                    alt="React Bootstrap logo"
-                />
-                </Navbar.Brand>
-            </Container>
-            </Navbar>
-            <br />
-            <Navbar bg="dark" variant="dark">
-                <Container>
-                <Navbar.Brand href="#home">
-                    <img
-                    alt=""
-                    src="/logo.svg"
-                    width="30"
-                    height="30"
-                    className="d-inline-block align-top"
-                    />{' '}
-                React Bootstrap
-                </Navbar.Brand>
-                </Container>
-            </Navbar>
-        </>
-    )
+        <div className="header">
+            <p className="text-center mt-4 mb-4">Test Fronted</p>
+            <Nav className="justify-content-center" defaultActiveKey="/home">
+                <Nav.Item as="li">
+                    <Nav.Link href="/" exact>Form</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="/pokemon" exact>Pokemon</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="/stock" exact>Stock</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="/datetime" exact>Datetime</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="/array" exact>Array</Nav.Link>
+                </Nav.Item>
+            </Nav>
+        </div>
+    );
 }
 
 export default Header

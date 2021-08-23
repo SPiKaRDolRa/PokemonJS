@@ -11,6 +11,7 @@ import Array from './Array'
 const App = () => {
     return (
         <Router>
+            <background />
             <Header />
                 <Switch>
                 <Route path="/" exact>
@@ -22,7 +23,7 @@ const App = () => {
                 <Route path="/stock" exact>
                     <Stock />
                 </Route>
-                <Route path="/datatime" exact>
+                <Route path="/datetime" exact>
                     <Datetime />
                 </Route>
                 <Route path="/array" exact>

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+background {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    z-index: -1;
+  }
+
+/*****************  Header  *****************/
+
+.header {
+    width: 90%;
+    margin-left: 5%;
+    color: #ccff00;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+.header p {
+    font-size: 5vmin;
+    padding-top: 10px;
+    margin-top: 2.5vh !important;
+    margin-bottom: 0 !important;
+    -webkit-text-stroke: 1px #000;
+}
+
+.header .nav-item {
+    margin: 0 auto;
+    transition: .5s;
+}
+
+.header .nav-item:hover {
+    transform: scale(110%);
+    background-color: #74e1ff;
+}
+
+.header .nav-item .nav-link {
+    color: oldlace;
+    -webkit-text-stroke: .5px #000;
+}
+

@@ -2,8 +2,8 @@ import React from 'react'
 
 const Stock = () => {
     return (
-        <div>
-            
+        <div className="container">
+            <h1 className="text-center" style={{paddingTop: "30%"}}>Stock</h1>
         </div>
     )
 }
