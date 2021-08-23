@@ -10,10 +10,9 @@ This project was bootstrapped with [React App](https://reactjs.org/).
 4 - Convert date-time by javascript.\
 5 - Detect data of array by javascipt.
 
-### `npm start`
+### `Contact`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+If you are interrested in my project.\
+You can contact me at [spikardolra.github.io](https://spikardolra.github.io/) or.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Email : [become_aum@hotmail.com]
