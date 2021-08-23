@@ -21,36 +21,68 @@ background {
     z-index: -1;
   }
 
-/*****************  Header  *****************/
-
-.header {
+.section {
     width: 90%;
-    margin-left: 5%;
-    color: #ccff00;
+    min-height: auto;
+    margin: 2% 5%;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
 }
 
-.header p {
+/*****************  Header  *****************/
+
+.section .title {
+    color: #ccff00;
     font-size: 5vmin;
     padding-top: 10px;
     margin-top: 2.5vh !important;
     margin-bottom: 0 !important;
-    -webkit-text-stroke: 1px #000;
 }
 
-.header .nav-item {
+.section .nav-item {
     margin: 0 auto;
     transition: .5s;
 }
 
-.header .nav-item:hover {
+.section .nav-item:hover {
     transform: scale(110%);
     background-color: #74e1ff;
+    border-radius: 10px 10px 0 0 / 10px 10px 0 0 ;
 }
 
-.header .nav-item .nav-link {
+.section .nav-item .nav-link {
     color: oldlace;
-    -webkit-text-stroke: .5px #000;
+    font-size: 3vmin;
 }
 
+/*****************  Body  *****************/
+
+.section .container {
+    color: oldlace;
+}
+
+.section .container .content {
+    min-height: 65vh;
+    padding: 10px 0;
+}
+
+/*****************  Form  *****************/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+}
+
+/*****************  Footer  *****************/
+
+.section footer {
+    color: oldlace;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px 0;
+}
+
+.section footer a {
+    color: #ccff00;
+}

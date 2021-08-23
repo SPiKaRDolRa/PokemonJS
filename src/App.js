@@ -7,6 +7,7 @@ import Pokemon from './Pokemon'
 import Stock from './Stock'
 import Datetime from './Datetime'
 import Array from './Array'
+import Footer from './Footer'
 
 const App = () => {
     return (
@@ -29,7 +30,8 @@ const App = () => {
                 <Route path="/array" exact>
                     <Array />
                 </Route>
-                </Switch> 
+                </Switch>
+            <Footer /> 
         </Router>
     );
 }
