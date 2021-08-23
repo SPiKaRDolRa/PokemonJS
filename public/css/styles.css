@@ -68,10 +68,78 @@ background {
 
 /*****************  Form  *****************/
 
+.titleform {
+    text-align: center;
+    font-size: 3vmin;
+    color: #74e1ff;
+    margin: 0;
+}
+
 .form {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+}
+
+.form p {
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 10px;
+    color: #f26b50;
+}
+
+.form label {
+    margin-top: 5vh;
+    margin-left: auto;
+}
+
+.form label input {
+    width: 50vw;
+    height: 2rem;
+    margin-left: 1rem;
+}
+
+.form label input::-webkit-input-placeholder {
+    font-size: 10px;
+    color: silver;
+}
+
+.form select {
+    width: 50vw;
+    height: 2rem;
+    margin-left: 1rem;
+    font-size: 10px;
+}
+
+.form #label-sent {
+    margin-left: 0 ;
+    margin-top: 5vh;
+    text-align: center ;
+}
+
+.form #sent {
+    width: 7.5rem;
+    height: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .form p {
+        margin-left: 1rem;
+    }
+    
+    .form label input {
+        width: 40rem;
+        max-width: 75vw;
+    }
+
+    .form label {
+        margin-right: 50vh ;
+    }
+
+    .form select {
+        width: 40rem;
+        max-width: 75vw;
+    }
 }
 
 /*****************  Footer  *****************/
