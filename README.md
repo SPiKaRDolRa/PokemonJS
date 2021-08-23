@@ -13,6 +13,6 @@ This project was bootstrapped with [React App](https://reactjs.org/).
 ### `Contact`
 
 If you are interrested in my project.\
-You can contact me at [spikardolra.github.io](https://spikardolra.github.io/) or.
+You can contact me at [spikardolra.github.io](https://spikardolra.github.io/) or,
 
-Email : [become_aum@hotmail.com]
+Email : become_aum@hotmail.com
