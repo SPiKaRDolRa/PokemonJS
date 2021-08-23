@@ -1,5 +1,7 @@
 import React from 'react'
-import Navbar from './Navbar'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import Header from './Header'
 import Form from './Form'
 import Pokemon from './Pokemon'
 import Stock from './Stock'
@@ -9,7 +11,7 @@ import Array from './Array'
 const App = () => {
     return (
         <Router>
-            <Navbar />
+            <Header />
                 <Switch>
                 <Route path="/" exact>
                     <Form />
@@ -28,7 +30,7 @@ const App = () => {
                 </Route>
                 </Switch> 
         </Router>
-    )
+    );
 }
 
 export default App
