@@ -1,6 +1,6 @@
 # This application created for testing
 
-This project was bootstrapped with [React App]
+This project was bootstrapped with [Create React App](https://reactjs.org/).
 
 ## Available Scripts
 
