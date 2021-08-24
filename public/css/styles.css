@@ -123,7 +123,7 @@ background {
 }
 
 .form .post {
-    color: oldlace;
+    color: #ccff00;
     font-size: .5rem;
 }
 
@@ -150,6 +150,18 @@ background {
         width: 40rem;
         max-width: 75vw;
     }
+}
+
+/*****************  Pokemon  *****************/
+
+.pokemon-name {
+    color: #f26b50;
+    font-size: 1.5vmin;
+    background-color: #ccff00;
+    border-radius: 10px;
+    padding: 5px 0;
+    text-align: center;
+    white-space: nowrap;
 }
 
 /*****************  Footer  *****************/
