@@ -4,8 +4,9 @@ import { useForm } from "react-hook-form";
 const Form = () => {
     const {register,handleSubmit, watch,formState: { errors }} = useForm();
 
-    const onSubmit = (data) => setResult(JSON.stringify(data));
-    const [result, setResult] = useState("");
+    const onSubmit = (data) => setResult(JSON.parse(JSON.stringify(data)));
+    const [result, setResult] = useState('');
+    const [show,setShow] = useState(true);
 
     const password = useRef({});
     password.current = watch("password", "");
@@ -49,8 +50,7 @@ const Form = () => {
                                     pattern: /^(?=.*\d)(?=.*[A-Z]).{6,12}$/ })} />
                         </label>
                             {errors?.password?.type === "required" && <p>This field is required</p>}
-                            {errors?.password?.type === "pattern" && (<p>6-12 characters,must have one-Uppercase and one-Number</p>
-                            )}
+                            {errors?.password?.type === "pattern" && (<p>6-12 characters,must have one-Uppercase and one-Number</p>)}
                         <label>Verify Password
                             <input placeholder="Please confirm password" type="password"
                                 {...register("confirmpassword", { 
@@ -58,27 +58,29 @@ const Form = () => {
                                     validate: value => value === password.current })} />
                         </label>
                             {errors?.confirmpassword?.type === "required" && <p>This field is required</p>}
-                            {errors?.confirmpassword?.type === "validate" && (<p>The password not current</p>
-                            )}
+                            {errors?.confirmpassword?.type === "validate" && (<p>The password not current</p>)}
                         <label>Gender
                             <select {...register("gender", { required: true })}>
                                 <option value="" disabled selected>Please choose</option>
-                                <option value="female">female</option>
                                 <option value="male">male</option>
+                                <option value="female">female</option>
                             </select>
                         </label>
                             {errors?.gender?.type === "required" && <p>This field is required</p>}
                         <div id="label-sent">
                             <input id="sent" type="submit" value="Sent !"/>
                         </div>
-                        <div id="label-sent">
-                            <p>{result}</p>
-                        </div>
+                        {result?<div id="label-sent" className="post">
+                            <h6>Firstname : <hl>{result.firstName}</hl></h6>
+                            <h6>Lastname : <hl>{result.lastName}</hl></h6>
+                            <h6>Email : <hl>{result.email}</hl></h6>
+                            <h6>Genter : <hl>{result.gender}</hl></h6>
+                        </div>:null}
                     </form>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Form
