@@ -43,10 +43,8 @@ const Pokemon = () => {
                         <Card className="card">
                           <Card.Img variant="top" src="" />
                           <Card.Body>
-                            <Card.Title></Card.Title>
-                            <Card.Text>
-
-                            </Card.Text>
+                            <Card.Title id="loading-title" className="loading"></Card.Title>
+                            <Card.Text id="loading-text" className="loading"></Card.Text>
                           </Card.Body>
                         </Card>
                       </Col>

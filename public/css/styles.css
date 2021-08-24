@@ -154,6 +154,36 @@ background {
 
 /*****************  Pokemon  *****************/
 
+.loading {
+    background-color: #c1c1c1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-mask-image: linear-gradient(-90deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: loading 0.5s infinite;
+}
+
+#loading-title {
+    width: 100%;
+    height: 100px;
+}
+
+#loading-text {
+    width: 100%;
+    height: 20px;
+    margin-top: 5vw;
+}
+
+@keyframes loading {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
+
 .pokemon-name {
     color: #f26b50;
     font-size: 1.5vmin;
