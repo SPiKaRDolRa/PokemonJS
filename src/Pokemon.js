@@ -32,7 +32,7 @@ const Pokemon = () => {
               <div className="content">
                 <p className="titleform">Fetch Pokemon API</p>
                 {loading? 
-                  <Row xs={2} md={4} xl={6} className="g-4 m-1">
+                  <Row xs={2} sm={4} xl={6} className="g-4 m-1">
                     {Array.from({ length: 18 }).map((_, idx) => (
                       <Col>
                         <Card className="card">
@@ -47,7 +47,7 @@ const Pokemon = () => {
                   </Row>
                 : (
                   <>
-                  <Row xs={2} md={4} xl={6} className="g-4 m-1">
+                  <Row xs={2} sm={4} xl={6} className="g-4 m-1">
                     {pokemonData.map( (pokemon) => {
                         return <CardPoke pokemon={pokemon}/>;
                     })}

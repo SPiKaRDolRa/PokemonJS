@@ -50,7 +50,7 @@ const Form = () => {
                                     pattern: /^(?=.*\d)(?=.*[A-Z]).{6,12}$/ })} />
                         </label>
                             {errors?.password?.type === "required" && <p>This field is required</p>}
-                            {errors?.password?.type === "pattern" && (<p>6-12 characters,must have one-Uppercase and one-Number</p>)}
+                            {errors?.password?.type === "pattern" && (<p>6-12 characters (must have One-Uppercase and One-Number)</p>)}
                         <label>Verify Password
                             <input placeholder="Please confirm password" type="password"
                                 {...register("confirmpassword", { 
