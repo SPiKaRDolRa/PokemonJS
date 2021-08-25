@@ -198,6 +198,7 @@ background {
 
 .titlexp {
     color: #ccff00;
+    transform: scale(125%);
 }
 
 /*****************  Footer  *****************/
