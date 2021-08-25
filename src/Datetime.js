@@ -5,9 +5,9 @@ import 'moment/locale/th';
 
 const Datetime = () => {
 
-    const dayOfMonth = moment().daysInMonth();
-    const quarterOfYear = moment().quarter();
-    const timeStamp = moment().unix();
+    const dayOfMonth = moment().daysInMonth();  //ใช้ momentjs เข้าฟังก์ชั่นนำเวลาปัจจุบันคำนวณหาวันในเดือนนี้
+    const quarterOfYear = moment().quarter();   //ใช้ momentjs เข้าฟังก์ชั่นนำเวลาปัจจุบันคำนวณหาไตรมาสในปีนี้
+    const timeStamp = moment().unix();          //ใช้ momentjs เข้าฟังก์ชั่นแปลง datetime เป็น unix timestamp
 
     return (
         <div className="section">

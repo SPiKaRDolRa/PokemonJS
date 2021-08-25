@@ -10,12 +10,12 @@ const Stock = () => {
                     <div className="text-center">
                         <p className="titleform">Fetch Product On Json File</p>
                         <p className="mt-5">Products name was editabled price</p>
-                        {JsonData.filter( json1 => json1.is_editable_price === false)
+                        {JsonData.filter( json1 => json1.is_editable_price === false)           //ดึงข้อมูลจาก Object Arrays
                                     .map( json1 => { 
                                     return <hexp> {json1.name}</hexp> })
                         }
                         <p className="mt-5">Total weight of products was editabled price</p>
-                        {JsonData.filter( json2 => json2.is_editable_price === false)
+                        {JsonData.filter( json2 => json2.is_editable_price === false)           //ดึงข้อมูลจาก Nested Arrays
                                     .map( json2 => json2.Total = json2.products
                                     .reduce((sum, cur) => sum + cur.weight, 0)) 
                                         .reduce( (total, get) => {

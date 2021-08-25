@@ -2,14 +2,13 @@ import React, { useState, useRef } from 'react'
 import { useForm } from "react-hook-form";
 
 const Form = () => {
-    const {register,handleSubmit, watch,formState: { errors }} = useForm();
+    const {register,handleSubmit, watch,formState: { errors }} = useForm();  // ฟอร์มส่วนใหญ่เขียนด้วย  JSX
 
-    const onSubmit = (data) => setResult(JSON.parse(JSON.stringify(data)));
-    const [result, setResult] = useState('');
-    const [show,setShow] = useState(true);
+    const onSubmit = (data) => setResult(JSON.parse(JSON.stringify(data)));  // รับค่ากดจากปุ่ม Sent แล้ว parse ข้อมูลนำไปเก็บใน setResult
+    const [result, setResult] = useState('');                                // เก็บค่าที่ได้จาก parse ไว้ใน result เพื่อนำไปใช้ต่อ
 
-    const password = useRef({});
-    password.current = watch("password", "");
+    const password = useRef({});                                             // ฟังก์ชั่นช่องตรวจสอบ password ให้ตรงกัน
+    password.current = watch("password", "");                                // โดยใช้ watch
 
     return (
         <div className="section">
