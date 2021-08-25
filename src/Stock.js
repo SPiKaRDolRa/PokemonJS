@@ -9,7 +9,7 @@ const Stock = () => {
                 <div className="content">
                     <div className="text-center">
                         <p className="titleform">Fetch product on json file</p>
-                        <p className="mt-4">Products name was editabled price</p>
+                        <p className="mt-5">Products name was editabled price</p>
                         {JsonData.filter( json1 => json1.is_editable_price === false)
                                     .map( json1 => { 
                                     return <p className="titlexp"> {json1.name}</p> })
@@ -22,6 +22,7 @@ const Stock = () => {
                                             return <p className="titlexp"> {total + get}</p>
                                         })
                         }
+                        <p className="mt-5">From json file : <a id="refJson" className="button" target="_blank" href="https://github.com/SPiKaRDolRa/pokemonjs/blob/main/src/exam-data.json">Json</a></p>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,13 @@
 import React from 'react'
 
 const Datetime = () => {
+
+    let now = new Date();
+    let basicFormatUTC = datetime.utc().format();
+    console.log(basicFormatUTC)  // Output: 2020-07-21T07:24:06Z
+ 
+
+
     return (
         <div className="section">
             <div className="container">
