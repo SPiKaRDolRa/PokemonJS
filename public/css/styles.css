@@ -194,6 +194,12 @@ background {
     white-space: nowrap;
 }
 
+/*****************  Stock  *****************/
+
+.titlexp {
+    color: #ccff00;
+}
+
 /*****************  Footer  *****************/
 
 .section footer {
