@@ -220,7 +220,7 @@ hexp {
     filter: brightness(80%);
 }
 
-/*****************  Stock  *****************/
+/*****************  DataTime  *****************/
 
 #localtime {
     font-size: 4vmin;
@@ -237,6 +237,13 @@ hexp {
         font-size: 3vmin;
         
     }
+}
+
+/*****************  Array  *****************/
+
+.source {
+    color: #ccff00;
+    transform: scale(125%);
 }
 
 /*****************  Footer  *****************/
