@@ -29,6 +29,15 @@ background {
     border-radius: 10px;
 }
 
+p {
+    font-size: 2vmin;
+}
+
+hexp {
+    color: #ccff00;
+    transform: scale(125%);
+}
+
 /*****************  Header  *****************/
 
 .section .title {
@@ -157,7 +166,6 @@ background {
 .loading {
     background-color: #c1c1c1;
     position: relative;
-    overflow: hidden;
     border-radius: 10px;
     -webkit-mask-image: linear-gradient(-90deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
     -webkit-mask-size: 200%;
@@ -196,11 +204,6 @@ background {
 
 /*****************  Stock  *****************/
 
-.titlexp {
-    color: #ccff00;
-    transform: scale(125%);
-}
-
 #refJson {
     color: #ccff00;
     height: fit-content;
@@ -215,6 +218,25 @@ background {
 
 #refJson:hover {
     filter: brightness(80%);
+}
+
+/*****************  Stock  *****************/
+
+#localtime {
+    font-size: 4vmin;
+    height: fit-content;
+    width: fit-content;
+    background-color: #f26b50;
+    padding: 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1024px) {
+    #localtime {
+        font-size: 3vmin;
+        
+    }
 }
 
 /*****************  Footer  *****************/

@@ -1,18 +1,29 @@
 import React from 'react'
+import Moment from 'react-moment';
+import moment from 'moment';
+import 'moment/locale/th';
 
 const Datetime = () => {
 
-    let now = new Date();
-    let basicFormatUTC = datetime.utc().format();
-    console.log(basicFormatUTC)  // Output: 2020-07-21T07:24:06Z
- 
-
+    const dayOfMonth = moment().daysInMonth();
+    const quarterOfYear = moment().quarter();
+    const timeStamp = moment().unix();
 
     return (
         <div className="section">
             <div className="container">
                 <div className="content">
-                <h1 className="text-center" style={{paddingTop: "30%"}}>Datatime</h1>
+                    <p className="titleform">Local Timezone Format </p>
+                    <div className="text-center mt-5">
+                        <Moment id="localtime" interval={1000} local format="YYYY-MM-DDThh:mm:ssZ" />
+                    </div>
+                    <div className="text-center mt-5">
+                        <p>Normal : <hexp><Moment local format="DD-MM-YYYY hh:mm" /></hexp></p>
+                        <p>Thai : <hexp><Moment local locale="th" add={{y: 543}} format="ddddที่ DD MMMM พศ.YYYY"></Moment></hexp></p>
+                        <p>Days on this month : <hexp>{dayOfMonth}</hexp></p>
+                        <p>Quarter on this year : <hexp>{quarterOfYear}</hexp></p>
+                        <p>Unix timestamp : <hexp>{timeStamp}</hexp></p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -15,7 +15,7 @@ const Form = () => {
         <div className="section">
             <div className="container">
                 <div className="content">
-                    <p className="titleform">Form and validation</p>
+                    <p className="titleform">Form And Validation</p>
                     <form className="form" onSubmit={handleSubmit(onSubmit)}>
                         <label>First Name
                             <input placeholder="Please fill first name"
