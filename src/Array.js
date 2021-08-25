@@ -1,4 +1,4 @@
-    import React from 'react'
+import React from 'react'
 
 const Array = () => {
 
@@ -9,9 +9,19 @@ const Array = () => {
     }
     const stringRandomArray = randomArray.toString();
 
-    const max = Math.max.apply(null, randomArray); // get the max of the array
-    randomArray.splice(randomArray.indexOf(max), 1); // remove max from the array
-    const secMax = Math.max.apply(null, randomArray); // get the 2nd max
+    const onlyUnique = (value, index, self) => {
+        return self.indexOf(value) === index;
+      }
+    const unique = randomArray.filter(onlyUnique);
+    
+    var secMax = "null";
+    if (unique.length !== 0){
+        if (unique.length > 1) {
+            const max = Math.max.apply(null, unique);
+            unique.splice(unique.indexOf(max), 1);
+        }
+        secMax = Math.max.apply(null, unique);
+    }
 
     return (
         <div className="section">
@@ -23,7 +33,7 @@ const Array = () => {
                             <p>Array random <hexp>"0-9"</hexp> for elements</p>
                             <p>Array : <hexp>[ {stringRandomArray} ]</hexp></p>
                             <a id="refJson" href="">Random !</a>
-                            <p id="output" className="mt-5">Output : {secMax} </p>
+                            <p id="output" className="mt-5">Output : <output>{secMax}</output> </p>
                             <h6 className="source mt-5">Source by</h6>
                             <p>1. Source 2nd of max element of array</p>
                             <p>2. If array is emtry - return "null"</p>

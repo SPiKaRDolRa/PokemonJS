@@ -27,6 +27,11 @@ background {
     margin: 2% 5%;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
+    animation: fadeIn 0.25s linear;
+}
+
+.section-head {
+    animation: 0 !important;
 }
 
 p {
@@ -62,6 +67,11 @@ hexp {
 .section .nav-item .nav-link {
     color: oldlace;
     font-size: 3vmin;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
 }
 
 /*****************  Body  *****************/
@@ -246,6 +256,11 @@ hexp {
     transform: scale(125%);
 }
 
+output {
+    color: #74e1ff;
+    font-size: 4vmin;
+}
+
 /*****************  Footer  *****************/
 
 .section footer {
@@ -258,3 +273,8 @@ hexp {
 .section footer a {
     color: #ccff00;
 }
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }

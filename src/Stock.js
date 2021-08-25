@@ -14,7 +14,7 @@ const Stock = () => {
                                     .map( json1 => { 
                                     return <hexp> {json1.name}</hexp> })
                         }
-                        <p className="mt-4">Total weight of products was editabled price</p>
+                        <p className="mt-5">Total weight of products was editabled price</p>
                         {JsonData.filter( json2 => json2.is_editable_price === false)
                                     .map( json2 => json2.Total = json2.products
                                     .reduce((sum, cur) => sum + cur.weight, 0)) 
